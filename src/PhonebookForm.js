@@ -13,10 +13,11 @@ addContact = (e) => {
     render(){
         return (
             <div>
+              <p><b>Add your new contact</b></p>
               <form ref="form" onSubmit={this.addContact}>
                 <input ref="name" placeholder="Enter Your Name" required={true}/>
                 <input ref="number" placeholder="Your Phone Number" required={true}/>
-                <button className="btn">Submit</button>
+                <button className="btn blue lighten-2">Submit</button>
               </form>                
             </div>
         );

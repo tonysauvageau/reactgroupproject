@@ -10,9 +10,13 @@ class ContactList extends React.Component {
             )
         });
         return(
-            <ul>
-              {contacts}
-            </ul>
+            <div>
+                <div className="row grey darken-4 white-text no-margin-bottom">
+                    <div className="col s6">Name</div>
+                    <div className="col s6">Number</div>
+                </div>
+                {contacts}
+            </div>
         );
     }
 }

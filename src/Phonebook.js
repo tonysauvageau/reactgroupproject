@@ -19,10 +19,14 @@ addContact=(name, number) =>{
 
   render() {
     return (
-      <div className="container">
-        <h2>My Phonebook</h2>
-        <PhonebookForm addContactItem={this.addContact}/>
-        <ContactList contacts={this.state.contacts}/>
+      <div>
+        <div className="col s12 m4">
+         <PhonebookForm addContactItem={this.addContact}/>
+        </div>
+        <div className="col s12 m8">
+          <p><b>My Phonebook</b></p>
+          <ContactList contacts={this.state.contacts}/>
+        </div>
       </div>
     );
   }
